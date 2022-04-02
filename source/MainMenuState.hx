@@ -25,7 +25,7 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '0.5.3b'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '0.0.1'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -154,7 +154,7 @@ class MainMenuState extends MusicBeatState
 		#end
 
                 #if android
-                addVirtualPad(UP_DOWN, A_B_E);
+                addVirtualPad(UP_DOWN, A_B);
                 #end
 
 		super.create();
